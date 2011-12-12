@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>tiny_url by Rodrigo Vieira</title>
+      <link href='style.css' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light|Inconsolata|Yanone Kaffeesatz' rel='stylesheet' type='text/css'>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+      <script type='text/javascript' src='site.js'></script>
+    </head>
+    <body>
+  <div id='container'> 
+    <div class="download"> 
+      <a href="http://github.com/rodrigoalvesvieira/tiny_url/zipball/master"> 
+        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a> 
+      <a href="http://github.com/rodrigoalvesvieira/tiny_url/tarball/master"> 
+        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a> 
+    </div> 
+ 
+    <h1 class='tiny_url'><a class='top' href='http://rodrigoalvesvieira.github.com/tiny_url'>tiny_url</a> 
+      <span class='small'>by <a href='http://github.com/rodrigoalvesvieira'>Rodrigo Vieira</a></span></h1> 
+ 
+    <div class='description'>
+      A gem for tinifying urls
+    </div>
+ 
+    <h2>Installation</h2>
+    <p> Install tiny_url with RubyGems:</p>
+    <pre class="terminal"> $ gem install tiny_url </pre>
+      
+      
+    <h2>Usage</h2>
+    <p>From the command-line:</p>
+    <pre class="terminal"> $ tiny_url http://accidentalchinesehipsters.tumblr.com/ </pre>
+    
+    This command tinifies the url for you, copies it to the clipboard and opens the website in your browser.
+    
+    <p>From anywhere else:</p>
+    <pre class="code"><span>
+      require "tiny_url"
+      
+      TinyUrl.silently_tinify "http://thereifixedit.failblog.org/"
+    </span></pre>
+     
+    <h2>Author</h2>
+    <p>Rodrigo Vieira (rodrigovieira1994@gmail.com) </p>
+
+    <h2>Download</h2> 
+    <p> 
+      You can download this project in either
+      <a href='http://github.com/rodrigoalvesvieira/tiny_url/zipball/master'>zip</a> or
+      <a href='http://github.com/rodrigoalvesvieira/tiny_url/tarball/master'>tar</a> formats.
+    </p> 
+    <p>You can also clone the project with <a href='http://git-scm.com'>Git</a> by running:
+      <pre class='terminal'>$ git clone git://github.com/rodrigoalvesvieira/tiny_url.git</pre>
+    </p>
+
+    <h2>Copyright</h2>
+    <p class='footer'> Website developed by <a href='http://twitter.com/#!/rodrigoio'>Rodrigo Vieira</a>.</p>
+    <p class='footer'> Copyright © 2011 Rodrigo Vieira. Under the MIT license.</p>
+  </div>
+</body>
+</html>
