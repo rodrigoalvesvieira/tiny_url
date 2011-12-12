@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+$:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
+
+require 'tiny_url'
+
+if ARGV.size != 1
+  puts "specify *ONE* the url to be tinified"
+else
+  TinyUrl.tinify(ARGV[0])
+end

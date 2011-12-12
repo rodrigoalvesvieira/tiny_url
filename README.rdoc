@@ -1,0 +1,11 @@
+= tiny_url
+
+A gem for tinifying urls
+
+== Usage
+
+  $ tiny_url http://accidentalchinesehipsters.tumblr.com/
+
+== Copyright
+
+Use this any way you want!
