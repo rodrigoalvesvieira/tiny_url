@@ -2,6 +2,10 @@
 
 A gem for tinifying urls
 
+== Installation
+
+  $ gem install tiny_url
+  
 == Usage
 
   $ tiny_url http://accidentalchinesehipsters.tumblr.com/
