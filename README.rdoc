@@ -12,9 +12,11 @@ Or in the Gemfile
     
 == Usage
 
+From the command-line:
+
   $ tiny_url http://accidentalchinesehipsters.tumblr.com/
 
-On Rails:
+Anywhere else in Ruby:
   
   TinyUrl.silently_tinify "http://thereifixedit.failblog.org/"
 
