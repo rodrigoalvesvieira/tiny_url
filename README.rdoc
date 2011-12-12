@@ -10,6 +10,6 @@ A gem for tinifying urls
 
   $ tiny_url http://accidentalchinesehipsters.tumblr.com/
 
-== Copyright
+== Licence
 
 Use this any way you want!
