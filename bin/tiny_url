@@ -2,10 +2,18 @@
 
 $:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
 
+help = <<HELP
+A gem for tinifying urls
+
+Basic Command Line Usage:
+  tiny_url http://accidentalchinesehipsters.tumblr.com/ # Returns the tinified version of the url, copies it to the clipboard and opens the webpage in your browser.
+  
+HELP
+
 require 'tiny_url'
 
-if ARGV.size != 1
-  puts "specify *ONE* the url to be tinified"
+if ARGV.size.zero?
+  puts help
 else
   TinyUrl.tinify(ARGV[0])
 end
