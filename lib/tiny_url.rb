@@ -3,7 +3,7 @@ require "net/http"
 require "clipboard"
 
 module TinyUrl
-  def self.tinify(url)
+  def self.tinify(url, op=nil)
     
     uri = URI.parse "http://tinyurl.com/api-create.php?url=http://#{url}"
     http = Net::HTTP.new(uri.host, uri.port)
@@ -14,9 +14,13 @@ module TinyUrl
     Clipboard.copy tiny_url
     
     puts "Copied tiny url to clipboard!"
-    puts "The generated tiny url is #{tiny_url}, you're gonna see the page..."
-    sleep 1
-    `open #{tiny_url}`
+    puts "The generated tiny url is #{tiny_url}" if op.nil?
+    
+    if op
+      puts "The generated tiny url is #{tiny_url}, you're gonna see the page..."
+      sleep 1
+      `open #{tiny_url}`
+    end
   end
   
   def self.silently_tinify(url)

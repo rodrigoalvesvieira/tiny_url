@@ -15,6 +15,7 @@ Or in the Gemfile
 From the command-line:
 
   $ tiny_url http://accidentalchinesehipsters.tumblr.com/
+  $ tiny_url -o http://accidentalchinesehipsters.tumbler.com/ - Opens the page in the browser
 
 Anywhere else in Ruby:
   
