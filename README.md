@@ -32,6 +32,14 @@ TinyUrl.make_request "http://thereifixedit.failblog.org/"
 
 ```
 
+## Author
+
+* Rodrigo Alves Vieira - rodrigovieira1994@gmail.com - http://www.rodrigoalvesvieira.com
+
+## Contributors
+
+* Rafael Fidelis - rafaelfid3lis@gmail.com
+
 ## Licence
 
 Copyright 2011-2012 Rodrigo Alves Vieira. http://www.rodrigoalvesvieira.com
