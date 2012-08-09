@@ -28,7 +28,7 @@ Anywhere else in Ruby:
 
 require "tiny_url"
 
-TinyUrl.silently_tinify "http://thereifixedit.failblog.org/"
+TinyUrl.make_request "http://thereifixedit.failblog.org/"
 
 ```
 
