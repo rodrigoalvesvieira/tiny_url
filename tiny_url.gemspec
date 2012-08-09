@@ -5,9 +5,9 @@ require "tiny_url/version"
 Gem::Specification.new do |s|
   s.name        = "tiny_url"
   s.version     = TinyUrl::VERSION
-  s.authors     = ["Rodrigo Vieira"]
+  s.authors     = ["Rodrigo Alves Vieira"]
   s.email       = ["rodrigovieira1994@gmail.com"]
-  s.homepage    = "http://rodrigoalvesvieira.com/tiny_url"
+  s.homepage    = "http://www.rodrigoalvesvieira.com"
   s.summary     = %q{A gem for tinifying urls}
   s.description = %q{A gem for tinifying urls. With a command-line interface.}
 

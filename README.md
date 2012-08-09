@@ -1,29 +1,40 @@
-= tiny_url
+# TinyUrl
 
 A gem for tinifying urls
 
-== Installation
+## Installation
 
-  $ gem install tiny_url
+  `$ gem install tiny_url`
 
 Or in the Gemfile
 
-  gem "tiny_url"
-    
-== Usage
+```ruby
+
+gem "tiny_url"
+
+```
+
+## Usage
 
 From the command-line:
 
-  $ tiny_url http://accidentalchinesehipsters.tumblr.com/
-  $ tiny_url -o http://accidentalchinesehipsters.tumbler.com/ - Opens the page in the browser
+  `$ tiny_url http://accidentalchinesehipsters.tumblr.com/`
+
+  `$ tiny_url -o http://accidentalchinesehipsters.tumbler.com/` - Opens the page in the browser
 
 Anywhere else in Ruby:
-  
-  TinyUrl.silently_tinify "http://thereifixedit.failblog.org/"
 
-== Licence
+```ruby
 
-Copyright 2011 Rodrigo Vieira. http://www.rodrigoalvesvieira.com
+require "tiny_url"
+
+TinyUrl.silently_tinify "http://thereifixedit.failblog.org/"
+
+```
+
+## Licence
+
+Copyright 2011-2012 Rodrigo Alves Vieira. http://www.rodrigoalvesvieira.com
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
