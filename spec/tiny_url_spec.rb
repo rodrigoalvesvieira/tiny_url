@@ -7,7 +7,7 @@ describe TinyUrl do
   end
   
   it "can tinify url" do
-    url = TinyUrl.silently_tinify "google.com"
+    url = TinyUrl.make_request "google.com"
     url.should_not be_nil    
   end
 end

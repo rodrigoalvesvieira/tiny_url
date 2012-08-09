@@ -1,10 +1,12 @@
 #!/usr/bin/env ruby
-
 $:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
 
+require 'tiny_url'
+
+if(ARGV.empty? || ["-h","--help"].include?(ARGV.first))
 help = <<HELP
 
-NAME
+TinyURL Ruby CLI
 
 A command line tool for tinifying urls
 
@@ -13,22 +15,20 @@ BASIC USAGE
 tiny_url [OPTIONS].. [URL]
 
 OPTIONS:
-  --open
-    -o      # Opens the web site in the browser immediately after getting the tiny url.
-  
+  [-o/--open]      # Opens the web site in the browser immediately after getting the tiny url.
+  [-c/--copy]      # Copy the shortened tiny url to your clipboard
+  [-h/--help]      # Show this help message and quit
+
 EXAMPLES:
   
-  tiny_url http://accidentalchinesehipsters.tumblr.com/ # Returns the tinified version of the url, copies it to the clipboard and opens the webpage in your browser.
-  tiny_url -o http://google.com
+  tiny_url http://accidentalchinesehipsters.tumblr.com/ # Returns the tinified version of the url
+  tiny_url -o http://google.com                         # Returns the tinified version of the url and open it in default browser
+  tiny_url -c -o http://defidelis.com                   # Returns the tinified version of the url , open it in browser and copy the tiny url to clipboard
   
 HELP
-
-require 'tiny_url'
-
-if ARGV.size.zero?
-  puts help
-elsif ARGV[0] == "-o" || ARGV[0] == "--open"
-  TinyUrl.tinify(ARGV[0], op="o")
+  puts help and exit
 else
-  TinyUrl.tinify(ARGV[0])
+	open = !(["-o","--open"] & ARGV).empty?
+	copy = !(["-c","--copy"] & ARGV).empty?
+	TinyUrl.tinify(ARGV.last, open, copy)
 end
